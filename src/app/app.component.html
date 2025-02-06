@@ -44,7 +44,7 @@
         </table>
       </div>
       }@else{
-      <h3 class="text-center">No hay productos</h3>
+      <h3 class="text-center">No hay productos🥺</h3>
       }
     </div>
   </div>
@@ -61,6 +61,13 @@
       <div class="form-group">
         <label>Nombre:</label>
         <input type="text" class="form-control" placeholder="Escribe nombre" [(ngModel)]="planta.nombre">
+        <!-- @if(enviado && formContacto.get('nombre')?.errors?.['required']){
+          <span style="color: red;">Este campo es obligatorio</span>
+          }
+          @if(enviado && formContacto.get('nombre')?.errors?.['minlength']){
+          <span style="color: red;">El nombre debe de tener mas de 10 caracteres</span>
+          } -->
+
       </div>
       <div class="form-group">
         <label>Reino:</label>

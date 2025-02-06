@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { FormsModule } from '@angular/forms';
+import { FormControl, FormGroup, FormsModule, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
@@ -83,7 +83,17 @@ export class AppComponent {
   ];
 
 
+  // formGroup
+  // formContacto=new FormGroup({
+  //   nombre: new FormControl('',[
+  //     Validators.required, // required es que es de awebo
+  //     Validators.minLength(10) //el minimo de caracteres
+  //   ]),
 
+  //   nombre: new FormControl('',[Validators.required, Validators.minLength(3)]),
+  //   reino: new FormControl('',[Validators.required]),
+  //   clase: new FormControl('',[Validators.required])
+  // })
   
   // Función para agregar una plantita
   agregarPlanta(){
